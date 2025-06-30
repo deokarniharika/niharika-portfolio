@@ -6,8 +6,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#90EE90', // pastel green
-        secondary: '#FADADD', // soft pink
+        backgroundLight: '#F4F6F3', // light grey-green background
+        backgroundDark: '#1A1A1A', // deep grey for dark mode
+        primary: '#6DBF4B', // green
+        secondary: '#B0BEC5', // soft grey-blue
+        textLight: '#1E1E1E',
+        textDark: '#FAFAFA'
       },
     },
   },

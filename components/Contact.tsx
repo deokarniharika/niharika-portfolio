@@ -1,1 +1,3 @@
-export default function Contact() { return <section id='contact'>Contact Section</section> }
+export default function Contact() {
+    return <section id="contact" className="min-h-screen">Contact Section</section>
+  }

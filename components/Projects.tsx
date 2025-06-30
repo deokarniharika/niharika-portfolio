@@ -1,1 +1,3 @@
-export default function Projects() { return <section id='projects'>Projects Section</section> }
+export default function Projects() {
+    return <section id="projects" className="min-h-screen">Projects Section</section>
+  }
