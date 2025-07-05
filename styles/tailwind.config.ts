@@ -6,10 +6,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        backgroundLight: '#F4F6F3', // light grey-green background
-        backgroundDark: '#1A1A1A', // deep grey for dark mode
-        primary: '#6DBF4B', // green
-        secondary: '#B0BEC5', // soft grey-blue
+        backgroundLight: '#FFFFFF',
+        backgroundDark: '#1A1A1A',
+        primary: '#A8D5BA', // pastel green
+        secondary: '#E0E0E0', // light grey boxes
         textLight: '#1E1E1E',
         textDark: '#FAFAFA'
       },

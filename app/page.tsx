@@ -9,7 +9,7 @@ import Contact from '@/components/Contact'
 
 export default function Home() {
   return (
-    <main className="px-4 sm:px-6 md:px-10 lg:px-20 py-24 space-y-28">
+    <main className="pt-24 space-y-32">
       <Hero />
       <About />
       <Expertise />

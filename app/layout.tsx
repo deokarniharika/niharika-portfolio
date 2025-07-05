@@ -7,13 +7,13 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Niharika Deokar | Portfolio',
-  description: 'Data Science | Machine Learning | Analysis',
+  description: 'Developer | Builder | Explorer',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} bg-backgroundLight dark:bg-backgroundDark text-textLight dark:text-textDark`}>
+      <body className={`${inter.className} bg-white dark:bg-backgroundDark text-gray-800 dark:text-textDark`}>
         <ThemeProvider>
           <Navbar />
           {children}
