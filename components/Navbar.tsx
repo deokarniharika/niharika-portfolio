@@ -12,7 +12,7 @@ export default function Navbar() {
   useEffect(() => setMounted(true), [])
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-backgroundLight/90 dark:bg-backgroundDark/90 backdrop-blur-md z-50 flex justify-between items-center px-4 sm:px-10 py-4 text-sm">
+    <nav className="fixed top-0 left-0 w-full bg-white/90 dark:bg-backgroundDark/90 backdrop-blur-md z-50 flex justify-between items-center px-4 sm:px-10 py-4 text-sm border-b border-gray-200 dark:border-gray-700">
       <button
         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         className="text-primary hover:text-secondary transition"
