@@ -6,10 +6,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        backgroundLight: '#FFFFFF',
+        backgroundLight: '#F8FDFC',
         backgroundDark: '#1A1A1A',
-        primary: '#A8D5BA', // pastel green
-        secondary: '#E0E0E0', // light grey boxes
+        primary: '#6DBF4B',
+        secondary: '#E0E0E0',
         textLight: '#1E1E1E',
         textDark: '#FAFAFA'
       },
