@@ -13,10 +13,10 @@ const experienceData = [
     company: "ECOZE",
     location:"Bristol, United Kingdom",
     duration: "May 2025 – ongoing",
-    description: ["Selected to work on thesis project with ECOZE on supermarket product categorisation utilising Azure for storing and automating the product database.",
-                  "Applying advanced data analysis and product categorisation on 15k+ grocery products for 7+ UK supermarkets each to predict carbon footprint, aligning with business objectives.",
-                  "Utilising Microsoft Azure for data storage and Tableau, Power BI for visualisations to support sustainability initiatives."]
-  },
+    description: ["Selected to work on an industry thesis project with ECOZE on supermarket product categorisation utilising Azure for storing and automating the product database.",
+      "Applying advanced data analysis and product categorisation on 15k+ grocery products for 7+ UK supermarkets each to predict carbon footprint, aligning with business objectives.",
+      "Utilising Microsoft Azure for data storage and Tableau, Power BI for visualisations to support sustainability initiatives."]
+},
   {
     role: "Data Science intern",
     company: "Fidelis AI",
@@ -66,7 +66,6 @@ const experienceData = [
   },
 ]
 
-
 export default function Experience() {
   return (
     <section id="experience" className="px-6">
@@ -75,7 +74,7 @@ export default function Experience() {
         {experienceData.map((exp, index) => (
           <div
             key={index}
-            className="min-w-[300px] max-h-[300px] p-4 bg-secondary dark:bg-gray-800 rounded-lg overflow-hidden flex flex-col"
+            className="min-w-[400px] max-h-[300px] p-4 bg-secondary dark:bg-gray-800 rounded-lg overflow-hidden flex flex-col"
           >
             {/* Scrollable content inside */}
             <div className="overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-gray-400 dark:scrollbar-thumb-gray-600">
