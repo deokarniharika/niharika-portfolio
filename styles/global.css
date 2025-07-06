@@ -9,3 +9,7 @@ html {
 section[id] {
   scroll-margin-top: 100px;
 }
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
