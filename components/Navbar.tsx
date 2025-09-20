@@ -38,7 +38,7 @@ export default function Navbar() {
             onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             className="p-2 text-gray-700 dark:text-gray-300 hover:text-green-800 dark:hover:text-green-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors"
           >
-            {mounted && (theme === 'light' ? <Moon size={20} /> : <Sun size={20} />)}
+            {mounted ? (theme === 'light' ? <Moon size={20} /> : <Sun size={20} />) : <Sun size={20} />}
           </button>
         </div>
       </div>

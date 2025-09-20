@@ -2,14 +2,27 @@ import { Linkedin, Github, Mail, MapPin } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex flex-col justify-center items-center text-center px-6">
+    <section id="hero" className="min-h-screen flex flex-col justify-center items-center text-center px-6 py-20">
       <div className="max-w-4xl mx-auto">
+        {/* Profile Picture */}
+        <div className="flex justify-center mb-6">
+          <div className="relative">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-3 border-gray-200 dark:border-gray-600 shadow-lg">
+              <img 
+                src="/Users/niharikadeokar/Desktop/portfolio/niharika-portfolio/profile/niharika-profile.jpg" 
+                alt="Niharika Deokar" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Optional decorative ring */}
+            <div className="absolute inset-0 rounded-full border-2 border-green-400 opacity-20"></div>
+          </div>
+        </div>
+        
         <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-green-800 to-blue-800 bg-clip-text text-transparent mb-6">
           Niharika Deokar
         </h1>
         
-      
-   
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
           Building ML Models that Matter | University of Bristol | Outstanding PLUS Awardee- Partnerships Builder | Over 2 years of hands-on experience in driving impactful decisions from data.
         </p>

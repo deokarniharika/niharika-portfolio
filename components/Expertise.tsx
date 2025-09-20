@@ -6,19 +6,23 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     name: "Programming",
-    skills: ["Python", "R", "SQL", "JavaScript", "HTML/CSS", "TypeScript"]
+    skills: ["Python", "R", "SQL", "JavaScript", "HTML/CSS", "TypeScript", "Java"]
   },
   {
-    name: "Data Science",
-    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "OpenCV", "Pandas", "NumPy", "Matplotlib", "Seaborn"]
+    name: "ML and AI",
+    skills: ["Keras", "PyTorch", "TensorFlow", "Scikit-learn", "OpenCV", "NLTK", "Hugging Face", "GANs", "LLMs", "Statistical Analysis"]
+  },
+  {
+    name: "Data Visualisation and Analysis",
+    skills: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Tableau", "Power BI", "Microsoft Excel", "Power Query"]
   },
   {
     name: "Cloud & DevOps",
-    skills: ["AWS", "Google Cloud", "Git", "CI/CD", "Docker", "Azure", "HPC"]
+    skills: ["AWS", "MongoDB Atlas", "Google Cloud Platform", "Git", "CI/CD", "Azure"]
   },
   {
-    name: "Engineering",
-    skills: ["Machine Learning", "Statistical Analysis", "Data Visualization", "NLP", "Automation", "Data Engineering"]
+    name: "Soft Skills",
+    skills: ["Stakeholder Communication", "Presentation", "Leadership", "Problem-Solving", "Teamwork", "Analytical Mindset"]
   }
 ]
 
@@ -31,10 +35,10 @@ export default function Expertise() {
           Core technologies and methodologies I work with
         </p>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {skillCategories.map((category, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-all hover:-translate-y-1">
-              <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4 text-center">
+            <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-5 hover:shadow-xl transition-all hover:-translate-y-1">
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-4 text-center">
                 {category.name}
               </h3>
               

@@ -27,7 +27,7 @@ export default function About() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-800 rounded-full"></span>
-                MSc Data Science at University of Bristol
+                Actively Looking for Data Science Roles
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-800 rounded-full"></span>
@@ -35,7 +35,7 @@ export default function About() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-800 rounded-full"></span>
-                Sustainability & Finance Projects
+                Sustainability 
               </li>
             </ul>
           </div>
