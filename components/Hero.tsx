@@ -2,14 +2,14 @@ import { Linkedin, Github, Mail, MapPin } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen flex flex-col justify-center items-center text-center px-6 py-20">
+    <section id="hero" className="min-h-screen flex flex-col justify-center items-center text-center px-6 py-20 pt-24">
       <div className="max-w-4xl mx-auto">
         {/* Profile Picture */}
         <div className="flex justify-center mb-6">
           <div className="relative">
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-3 border-gray-200 dark:border-gray-600 shadow-lg">
               <img 
-                src="/Users/niharikadeokar/Desktop/portfolio/niharika-portfolio/profile/niharika-profile.jpg" 
+                src="/profile.jpeg" 
                 alt="Niharika Deokar" 
                 className="w-full h-full object-cover"
               />
@@ -19,7 +19,7 @@ export default function Hero() {
           </div>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-green-800 to-blue-800 bg-clip-text text-transparent mb-6">
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
           Niharika Deokar
         </h1>
         

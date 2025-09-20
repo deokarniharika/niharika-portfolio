@@ -2,17 +2,18 @@ import { Mail, Phone, MapPin, Linkedin, Github, Send } from 'lucide-react'
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-6 py-16">
+    <section id="contact" className="px-6 py-16 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Get In Touch</h2>
-        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-          Open to opportunities in data science, machine learning research, and sustainable technology. 
-          Let's discuss how we can work together.
-        </p>
         
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
+              Open to opportunities in data science, machine learning research, and sustainable technology. 
+              Let's discuss how we can work together.
+            </p>
+            
             <h3 className="text-xl font-semibold mb-6 text-gray-800 dark:text-gray-200">
               Contact Information
             </h3>
