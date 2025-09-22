@@ -1,4 +1,8 @@
+'use client'
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { Calendar, MapPin, ExternalLink, Trello, School, University, Earth, Power, Globe } from 'lucide-react'
+import Modal from '@/components/Modal'
 
 interface ExperienceItem {
   company: string
@@ -8,6 +12,7 @@ interface ExperienceItem {
   description: string[]
   logo?: string
   link?: string
+  images?: string[]
 }
 
 const experiences: ExperienceItem[] = [
@@ -96,6 +101,8 @@ const experiences: ExperienceItem[] = [
 ]
 
 export default function Experience() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const router = useRouter()
   return (
     <section id="experience" className="px-6 py-16 bg-gray-50 dark:bg-gray-900 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
@@ -117,9 +124,26 @@ export default function Experience() {
                     <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
                       {exp.company}
                     </h3>
-                    <p className="text-lg text-green-800 dark:text-green-400 font-medium">
-                      {exp.role}
-                    </p>
+                    <div className="flex items-center gap-3 flex-wrap">
+                      <p className="text-lg text-green-800 dark:text-green-400 font-medium">
+                        {exp.role}
+                      </p>
+                      <button
+                        onClick={() => {
+                          const slugMap: Record<string, string> = {
+                            '180 Degree Consulting': '/experience/weston-housing-action',
+                            'ECOZE': '/experience/ecoze',
+                            'Fidelis AI': '/experience/fidelis-ai',
+                            'Bank of Maharashtra': '/experience/bank-of-maharashtra'
+                          }
+                          const href = slugMap[exp.company] ?? '/experience/weston-housing-action'
+                          router.push(href)
+                        }}
+                        className="inline-flex items-center gap-2 bg-gray-200 hover:bg-gray-300 text-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-200 font-medium py-1.5 px-3 rounded-md text-sm transition-colors"
+                      >
+                        View details
+                      </button>
+                    </div>
                   </div>
                 </div>
                 
@@ -144,17 +168,7 @@ export default function Experience() {
                 ))}
               </ul>
               
-              {exp.link && (
-                <a 
-                  href={exp.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-green-800 hover:text-green-900 dark:text-green-400 dark:hover:text-green-300 transition-colors"
-                >
-                  <span>Learn More</span>
-                  <ExternalLink size={16} />
-                </a>
-              )}
+              {/* buttons and modal removed; navigation handled via header button */}
             </div>
           ))}
           
