@@ -1,15 +1,17 @@
 export default function Courses() {
   const certifications = [
-    { name: 'Machine Learning Specialization', issuer: 'Coursera', year: '2024' },
-    { name: 'Deep Learning Fundamentals', issuer: 'fast.ai', year: '2024' },
-    { name: 'Data Visualization with Tableau', issuer: 'Tableau', year: '2023' },
+    { name: 'Sustainable Futures', issuer: 'FutureLearn', year: '2025' },
+    { name: 'AWS Academy Graduate — AWS Cloud Foundations', issuer: 'AWS', year: '2024' },
+    { name: 'AI and Climate Change', issuer: 'DeepLearning.AI', year: '2023' },
+    { name: 'Supervised Machine Learning', issuer: 'Stanford', year: '2023' },
+    { name: 'Geospatial and Environmental Analysis', issuer: 'UC Davis', year: '2023' },
+    { name: 'M001: MongoDB Basics', issuer: 'MongoDB University', year: '2022' },
   ]
 
   const courses = [
-    'Advanced Machine Learning',
-    'Statistical Methods for Data Science',
-    'Big Data and Cloud Computing',
-    'Database Systems and ETL',
+    'Launchpad Cohort 3.0 Fellow — College to Climate (2024)',
+    'Student Mobility Innovation Program: For New Technologies on Development — AIT, Thailand (2023)',
+    'VC Industry Research and Pitch Analysis Extern — Energy Innovation Capital (2023)',
   ]
 
   return (

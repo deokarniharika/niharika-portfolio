@@ -66,12 +66,7 @@ export default function Hero() {
           </div>
         </div>
         
-        {/* Internship Status Box */}
-        <div className="bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-600 rounded-lg px-4 py-3 shadow-sm mb-4">
-          <p className="text-gray-700 dark:text-gray-300 text-sm font-medium">
-            🎯 Actively looking for <span className="text-green-800 dark:text-green-400 font-semibold">Data Science Internships and Full-time Roles</span>
-          </p>
-        </div>
+        
         
       </div>
     </section>

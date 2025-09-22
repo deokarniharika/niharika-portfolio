@@ -11,32 +11,56 @@ interface Event {
 
 const events: Event[] = [
   {
-    title: "Outstanding PLUS Award",
-    description: "Recognized for exceptional academic performance and partnerships building at University of Bristol.",
-    date: "2024",
-    location: "University of Bristol",
-    category: "Academic Achievement"
+    title: 'Outstanding PLUS Award and Bristol PLUS Award',
+    description:
+      "UoB Employability Award (\u003c5% recipients) and Outstanding PLUS (10 shortlisted) — Partnership Builders.",
+    date: 'Feb 2025',
+    location: 'University of Bristol',
+    category: 'Achievement',
+    link: 'https://universityofbristolcareers.blogs.bristol.ac.uk/2025/03/21/outstanding-plus-award-honourable-mentions-2024-25/'
   },
   {
-    title: "Data Science Conference",
-    description: "Presented research on machine learning applications in sustainability and climate change.",
-    date: "2024",
-    location: "Bristol, UK",
-    category: "Research Presentation"
+    title: 'Youth Climate Fund',
+    description:
+      "Technical Lead, There Is No Earth B — €4,000 grant to advance climate-tech initiatives.",
+    date: 'Jul 2022',
+    location: 'Youth and Environment Europe',
+    category: 'Grant',
+    link: 'https://yeenet.eu/call-for-proposals-youth-climate-fund/'
   },
   {
-    title: "Partnerships Builder Recognition",
-    description: "Awarded for successfully building and maintaining strategic partnerships across multiple organizations.",
-    date: "2024",
-    location: "University of Bristol",
-    category: "Leadership"
+    title: 'TDRA Designing a Sustainable Future using ICTs Hackathon',
+    description:
+      'Top 40 / 2,745 teams internationally; $25 prize for relevant idea.',
+    date: '2022',
+    location: 'International',
+    category: 'Hackathon'
   },
   {
-    title: "Sustainability Hackathon Winner",
-    description: "Led team to victory in developing innovative solutions for environmental challenges using data science.",
-    date: "2023",
-    location: "Remote",
-    category: "Competition"
+    title: 'Encode London: Web3 Hackathon and Research Conference',
+    description:
+      'Built CryptoLens for DeFi data analysis (Ethereum/Arbitrum): patterns, connectivity, mint/burn and loan spikes; Streamlit dashboard + iOS app.',
+    date: 'Oct 25–27',
+    location: 'Shoreditch Exchange, London, UK',
+    category: 'Hackathon'
+  },
+  {
+    title: 'EnviroSummit 2024 — Poster Presentation',
+    description:
+      'Plant-based diets for climate mitigation — visuals on food footprints (Our World in Data).',
+    date: 'Mar 1, 2024',
+    location: 'MIT WPU, Pune, India',
+    category: 'Conference',
+    link: 'https://ourworldindata.org/environmental-impacts-of-food'
+  },
+  {
+    title: 'ICSTA 2023 — Conference Presentation',
+    description:
+      'Smart Agriculture: soil temperature analysis and forecasting — ML for climate impact in agri.',
+    date: 'Dec 19–20, 2023',
+    location: 'Kolkata, India',
+    category: 'Conference',
+    link: "https://link.springer.com/chapter/10.1007/978-981-97-5157-0_29"
   }
 ]
 
@@ -85,6 +109,17 @@ export default function Events() {
                   <MapPin size={16} />
                   <span>{event.location}</span>
                 </div>
+                {event.link && (
+                  <a
+                    href={event.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-blue-700 dark:text-blue-400 hover:underline"
+                  >
+                    <ExternalLink size={14} />
+                    Link
+                  </a>
+                )}
               </div>
             </div>
           ))}

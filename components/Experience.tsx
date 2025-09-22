@@ -108,9 +108,19 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Professional Experience</h2>
         
-        <div className="space-y-8">
-          {experiences.map((exp, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
+        <div className="relative">
+          {/* Timeline line */}
+          <div className="absolute left-24 top-0 bottom-0 w-0.5 bg-gray-300 dark:bg-gray-600"></div>
+          
+          <div className="space-y-8">
+            {experiences.map((exp, index) => (
+              <div key={index} className="relative flex items-start gap-8">
+                {/* Date on the left */}
+                <div className="flex-shrink-0 w-20 text-right text-sm text-gray-600 dark:text-gray-400 mt-6">
+                  {exp.period}
+                </div>
+                
+                <div className="flex-1 bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div className="flex items-center gap-4 mb-4 md:mb-0">
                   {exp.logo && (
@@ -154,10 +164,6 @@ export default function Experience() {
                 
                 <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
                   <div className="flex items-center gap-1">
-                    <Calendar size={16} />
-                    <span>{exp.period}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
                     <MapPin size={16} />
                     <span>{exp.location}</span>
                   </div>
@@ -174,9 +180,10 @@ export default function Experience() {
               </ul>
               
               {/* buttons and modal removed; navigation handled via header button */}
-            </div>
-          ))}
-          
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
         
         {/* Call to Action */}

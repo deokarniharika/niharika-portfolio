@@ -1,45 +1,85 @@
-import { ExternalLink, Github, Globe } from 'lucide-react'
+'use client'
+
+import { ExternalLink } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 
 interface Project {
   title: string
   description: string
-  technologies: string[]
-  image?: string
-  github?: string
-  live?: string
-  category: string
+  topic: string
+  link?: string
+  slug?: string
 }
 
 const projects: Project[] = [
   {
-    title: "Machine Learning for Climate Change",
-    description: "Developed predictive models to analyze climate data and predict environmental changes using advanced ML algorithms.",
-    technologies: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "Matplotlib"],
-    category: "Data Science"
+    title: 'University Internship Management System (SQL)',
+    topic: 'Databases',
+    description:
+      'MySQL-backed internship management system; automated workflows cut admin effort ~40% and enabled structured reporting for faculty and placement.',
   },
   {
-    title: "Financial Risk Assessment System",
-    description: "Built a comprehensive risk assessment tool using machine learning to predict loan defaults with 89% accuracy.",
-    technologies: ["Python", "SVM", "NLTK", "Seaborn", "PostgreSQL"],
-    category: "Finance"
+    title: 'Mitigating Climate Change via Smart Agriculture',
+    topic: 'Climate/ML',
+    description:
+      'Soil temperature forecasting using RF/SVM/kNN on multi‑year EDS data; presented at ICSTA 2023 and published in Springer Proceedings (ICT).',
+    link: 'https://link.springer.com/chapter/10.1007/978-981-97-5157-0_29'
   },
   {
-    title: "Sustainable Restaurant Database",
-    description: "Created an automated database system for plant-forward restaurants using Google Cloud API and data analysis.",
-    technologies: ["Python", "Google Cloud", "Data Analysis", "Automation"],
-    category: "Sustainability"
+    title: 'Advancements in Football Analytics: xG Modelling',
+    topic: 'Sports Analytics',
+    description:
+      'xG modelling on StatsBomb data; handled class imbalance with SMOTENC; LightGBM outperformed logistic regression with better calibration.',
   },
   {
-    title: "Legal Document Automation",
-    description: "Developed GenAI solutions for legal document automation, improving efficiency and accuracy in legal processes.",
-    technologies: ["AI/ML", "NLP", "Legal Tech", "Automation"],
-    category: "AI/ML"
-  }
+    title: 'Automated MCQ Generation for Video Lectures',
+    topic: 'NLP/EdTech',
+    description:
+      'Pipeline with Pytube + Whisper + spaCy to transcribe and generate MCQs with distractors; ~81% answer‑key accuracy in evaluations.',
+  },
+  {
+    title: 'FinPredict and Insights',
+    topic: 'FinTech/ML',
+    description:
+      'Streamlit suite for BoM: churn prediction, report summarisation/sentiment, time‑series forecasts, and early‑warning indicators for loan risk.',
+  },
+  {
+    title: 'Early Detection of Epileptic Seizures (Bioinformatics)',
+    topic: 'Health/ML',
+    description:
+      'EEG‑based seizure prediction on 11.5k samples/178 features; best test AUC 0.767; SVM recall 82.4%; Twilio SMS alerts and secure Streamlit UI.',
+  },
+  {
+    title: 'Occlusion‑Aware Face Recognition',
+    topic: 'CV/Deep Learning',
+    description:
+      'Reconstruction of occluded faces using GANs + Siamese TL; improved matching under occlusions using campus image dataset.',
+  },
+  {
+    title: 'Prediction and Analysis of Carbon Footprint of Food',
+    topic: 'Sustainability/ML',
+    description:
+      'Visual analytics of GHG emissions per kg; ensemble models reached 88.2% test accuracy; advocates plant‑based dietary shifts.',
+  },
+  {
+    title: "There Is No Earth B — Website Revamp",
+    topic: 'Climate Tech/Web',
+    description:
+      'Led redesign for clearer content (events, guides, videos, petitions); improved UX to support awareness and community action.',
+  },
+  {
+    title: 'InTheEco Bot',
+    topic: 'Automation',
+    description:
+      'Bot that surfaces Reddit environmental news to keep communities updated on key sustainability topics.',
+  },
 ]
 
 export default function Projects() {
+  const router = useRouter()
+  
   return (
-    <section id="projects" className="px-6 py-16 bg-gray-50 dark:bg-gray-900 scroll-mt-24">
+    <section id="projects" className="px-6 py-16 scroll-mt-24">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Featured Projects</h2>
         <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -48,33 +88,45 @@ export default function Projects() {
         
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1">
+            <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-900 dark:text-green-200 text-sm font-medium rounded-full">
-                    {project.category}
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-900 dark:text-blue-200 text-sm font-medium rounded-full">
+                    {project.topic}
                   </span>
                   <div className="flex gap-2">
-                    {project.github && (
+                    {project.link && (
                       <a
-                        href={project.github}
+                        href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="p-2 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                        className="inline-flex items-center gap-2 bg-gray-200 hover:bg-gray-300 text-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-200 py-1.5 px-3 rounded-md text-sm"
                       >
-                        <Github size={18} />
+                        <ExternalLink size={16} />
+                        <span>Link</span>
                       </a>
                     )}
-                    {project.live && (
-                      <a
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 text-gray-600 hover:text-green-800 dark:text-gray-400 dark:hover:text-green-400 transition-colors"
-                      >
-                        <Globe size={18} />
-                      </a>
-                    )}
+                    <button
+                      onClick={() => {
+                        const slugMap: Record<string, string> = {
+                          'University Internship Management System (SQL)': '/projects/internship-management',
+                          'Mitigating Climate Change via Smart Agriculture': '/projects/smart-agriculture',
+                          'Advancements in Football Analytics: xG Modelling': '/projects/football-analytics',
+                          'Automated MCQ Generation for Video Lectures': '/projects/mcq-generation',
+                          'FinPredict and Insights': '/projects/finpredict',
+                          'Early Detection of Epileptic Seizures (Bioinformatics)': '/projects/epilepsy-detection',
+                          'Occlusion‑Aware Face Recognition': '/projects/face-recognition',
+                          'Prediction and Analysis of Carbon Footprint of Food': '/projects/carbon-footprint',
+                          "There Is No Earth B — Website Revamp": '/projects/earth-b-website',
+                          'InTheEco Bot': '/projects/ecobot'
+                        }
+                        const href = slugMap[project.title] ?? '/projects'
+                        router.push(href)
+                      }}
+                      className="inline-flex items-center gap-2 bg-gray-200 hover:bg-gray-300 text-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-200 py-1.5 px-3 rounded-md text-sm"
+                    >
+                      <span>View details</span>
+                    </button>
                   </div>
                 </div>
                 
@@ -86,41 +138,6 @@ export default function Projects() {
                   {project.description}
                 </p>
                 
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                
-                <div className="flex gap-3">
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-green-600 hover:text-green-800 dark:text-green-400 dark:hover:text-green-300 transition-colors text-sm font-medium"
-                    >
-                      <Github size={16} />
-                      <span>View Code</span>
-                    </a>
-                  )}
-                  {project.live && (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-green-800 hover:text-green-900 dark:text-green-400 dark:hover:text-green-300 transition-colors text-sm font-medium"
-                    >
-                      <ExternalLink size={16} />
-                      <span>Live Demo</span>
-                    </a>
-                  )}
-                </div>
               </div>
             </div>
           ))}

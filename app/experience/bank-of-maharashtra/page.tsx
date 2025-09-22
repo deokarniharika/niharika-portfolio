@@ -1,17 +1,18 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
 export default function BankOfMaharashtraCaseStudy() {
   const router = useRouter()
   const images = [
-    '/images/bom1.png',
-    '/images/bom2.png',
-    '/images/bom3.png',
-    '/images/bom4.png',
-    '/images/bom5.png',
-    '/images/bom6.png'
+    require('../../../images/bom1.png'),
+    require('../../../images/bom2.png'),
+    require('../../../images/bom3.png'),
+    require('../../../images/bom4.png'),
+    require('../../../images/bom5.png'),
+    require('../../../images/bom6.png'),
   ]
 
   return (
@@ -39,7 +40,7 @@ export default function BankOfMaharashtraCaseStudy() {
         <div className="grid sm:grid-cols-2 gap-4">
           {images.map((src, idx) => (
             <div key={idx} className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-              <img src={src} alt={`Bank of Maharashtra ${idx + 1}`} className="w-full h-auto object-contain" />
+              <Image src={src} alt={`Bank of Maharashtra ${idx + 1}`} className="w-full h-auto object-contain" />
             </div>
           ))}
         </div>
