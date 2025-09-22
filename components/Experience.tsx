@@ -128,21 +128,26 @@ export default function Experience() {
                       <p className="text-lg text-green-800 dark:text-green-400 font-medium">
                         {exp.role}
                       </p>
-                      <button
-                        onClick={() => {
+                      {exp.company !== 'Fidelis AI' && (
+                        <button
+                          onClick={() => {
                           const slugMap: Record<string, string> = {
                             '180 Degree Consulting': '/experience/weston-housing-action',
                             'ECOZE': '/experience/ecoze',
                             'Fidelis AI': '/experience/fidelis-ai',
+                            'University of Bristol': '/experience/university-of-bristol',
+                            'Humane Society International': '/experience/humane-society-international',
+                            'GreenPepper': '/experience/green-pepper',
                             'Bank of Maharashtra': '/experience/bank-of-maharashtra'
                           }
                           const href = slugMap[exp.company] ?? '/experience/weston-housing-action'
                           router.push(href)
-                        }}
-                        className="inline-flex items-center gap-2 bg-gray-200 hover:bg-gray-300 text-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-200 font-medium py-1.5 px-3 rounded-md text-sm transition-colors"
-                      >
-                        View details
-                      </button>
+                          }}
+                          className="inline-flex items-center gap-2 bg-gray-200 hover:bg-gray-300 text-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-200 font-medium py-1.5 px-3 rounded-md text-sm transition-colors"
+                        >
+                          View details
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>

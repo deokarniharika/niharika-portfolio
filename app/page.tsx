@@ -6,6 +6,7 @@ import Projects from '@/components/Projects'
 import Events from '@/components/Events'
 import Volunteering from '@/components/Volunteering'
 import Contact from '@/components/Contact'
+import Courses from '@/components/Courses'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Expertise />
       <Experience />
       <Projects />
+      <Courses />
       <Events />
       <Volunteering />
       <Contact />

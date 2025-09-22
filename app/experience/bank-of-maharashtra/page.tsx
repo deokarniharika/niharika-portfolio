@@ -5,7 +5,14 @@ import { useRouter } from 'next/navigation'
 
 export default function BankOfMaharashtraCaseStudy() {
   const router = useRouter()
-  const images: string[] = []
+  const images = [
+    '/images/bom1.png',
+    '/images/bom2.png',
+    '/images/bom3.png',
+    '/images/bom4.png',
+    '/images/bom5.png',
+    '/images/bom6.png'
+  ]
 
   return (
     <main className="min-h-screen px-6 py-16 bg-white dark:bg-gray-900">
@@ -30,10 +37,11 @@ export default function BankOfMaharashtraCaseStudy() {
         </p>
 
         <div className="grid sm:grid-cols-2 gap-4">
-          {/* Add images like below when available */}
-          {/* <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-            <img src="/images/bom-1.jpg" alt="Bank of Maharashtra 1" className="w-full h-auto object-contain" />
-          </div> */}
+          {images.map((src, idx) => (
+            <div key={idx} className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+              <img src={src} alt={`Bank of Maharashtra ${idx + 1}`} className="w-full h-auto object-contain" />
+            </div>
+          ))}
         </div>
       </div>
     </main>

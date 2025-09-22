@@ -1,17 +1,18 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
-export default function FidelisCaseStudy() {
+export default function HumaneSocietyInternationalCaseStudy() {
   const router = useRouter()
   const images = [
-    '/images/fidelis1.png',
-    '/images/fidelis2.png',
-    '/images/fidelis3.png',
-    '/images/fidelis4.png',
-    '/images/fidelis5.png',
-    '/images/fidelis6.png'
+    require('../../../images/hsi1.png'),
+    require('../../../images/hsi2.png'),
+    require('../../../images/hsi3.png'),
+    require('../../../images/hsi4.png'),
+    require('../../../images/hsi5.png'),
+    require('../../../images/hsi6.png'),
   ]
 
   return (
@@ -30,16 +31,16 @@ export default function FidelisCaseStudy() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-          Case Study: Fidelis AI — AV Research & Pipelines
+          Case Study: Humane Society International — Data & Strategy Internship
         </h1>
         <p className="text-gray-600 dark:text-gray-300 mb-8">
-          CycleGAN-based improvements to synthetic data, and automated AWS pipelines (Lambda, S3, EC2) supporting data delivery and operational efficiency.
+          Curated plant-based restaurant databases across major Indian cities, automated data collection using Google Cloud APIs, conducted interviews, and developed case studies to inform outreach strategies.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-4">
           {images.map((src, idx) => (
             <div key={idx} className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-              <img src={src} alt={`Fidelis AI ${idx + 1}`} className="w-full h-auto object-contain" />
+              <Image src={src} alt={`Humane Society International ${idx + 1}`} className="w-full h-auto object-contain" />
             </div>
           ))}
         </div>
