@@ -12,36 +12,36 @@ interface VolunteerWork {
 const volunteerWork: VolunteerWork[] = [
   {
     organization: "University of Bristol",
-    role: "Student Ambassador",
-    description: "Representing the university at events and helping prospective students understand the data science program.",
-    period: "2024 - Present",
-    impact: "Helped 50+ students make informed decisions about their academic future",
+    role: "Bristol SU Volunteer",
+    description: "Representing the university as a Student Union Volunteer at events and helping current students.",
+    period: "Oct 2024",
+    impact: "Volunteered at the university fair to support 40+ local organisations",
     category: "Education"
   },
   {
-    organization: "Local Community",
-    role: "Data Literacy Workshop Leader",
-    description: "Conducting workshops to teach basic data analysis skills to community members and small business owners.",
-    period: "2023 - Present",
-    impact: "Trained 30+ individuals in data-driven decision making",
-    category: "Community"
+    organization: "WomenTech Network",
+    role: "Global Ambassador",
+    description: "Mentoring young women interested in pursuing careers in data science and technology.",
+    period: "Feb 2024- Apr 2024",
+    impact: "Supported 20+ female students in their tech journey",
+    category: "Mentorship"
   },
   {
-    organization: "Environmental NGO",
-    role: "Volunteer Data Analyst",
-    description: "Providing pro-bono data analysis services to help environmental organizations make data-driven decisions.",
-    period: "2023 - Present",
-    impact: "Supported 5+ organizations with sustainability initiatives",
+    organization: "There Is No Earth B",
+    role: "Technical Lead",
+    description: "Providing pro-bono website development and data analysis services to help spread awareness andmake data-driven decisions.",
+    period: "April 2023- May 2023",
+    impact: "Won the Youth Climate Fund grant to advance climate-tech initiatives",
     category: "Environment"
   },
   {
-    organization: "Women in Tech",
-    role: "Mentor",
-    description: "Mentoring young women interested in pursuing careers in data science and technology.",
-    period: "2023 - Present",
-    impact: "Mentored 10+ students in their tech journey",
-    category: "Mentorship"
-  }
+    organization: "VKind | Vegan Business App",
+    role: "Volunteer Intern",
+    description: "Worked closely with fellow team members on editing WordPress websites to enhance SEO.",
+    period: "Feb 2022- March 2022",
+    impact: "Made the NGO website user-friendly and accessible",
+    category: "Community"
+  },
 ]
 
 export default function Volunteering() {
@@ -50,7 +50,7 @@ export default function Volunteering() {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Community Involvement</h2>
         <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-          Giving back to the community through volunteer work and mentorship in data science and technology
+          Giving back to the community through mentorship in data science, climate and technology
         </p>
         
         <div className="grid md:grid-cols-2 gap-8">

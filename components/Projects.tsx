@@ -26,34 +26,31 @@ const projects: Project[] = [
     link: 'https://link.springer.com/chapter/10.1007/978-981-97-5157-0_29'
   },
   {
-    title: 'Advancements in Football Analytics: xG Modelling',
-    topic: 'Sports Analytics',
-    description:
-      'xG modelling on StatsBomb data; handled class imbalance with SMOTENC; LightGBM outperformed logistic regression with better calibration.',
-  },
-  {
-    title: 'Automated MCQ Generation for Video Lectures',
-    topic: 'NLP/EdTech',
-    description:
-      'Pipeline with Pytube + Whisper + spaCy to transcribe and generate MCQs with distractors; ~81% answer‑key accuracy in evaluations.',
-  },
-  {
     title: 'FinPredict and Insights',
     topic: 'FinTech/ML',
     description:
       'Streamlit suite for BoM: churn prediction, report summarisation/sentiment, time‑series forecasts, and early‑warning indicators for loan risk.',
   },
   {
+    title: 'Advancements in Football Analytics: xG Modelling',
+    topic: 'Sports Analytics',
+    description:
+      'xG modelling on StatsBomb data; handled class imbalance with SMOTENC; LightGBM outperformed logistic regression with better calibration.',
+    link: 'https://link.springer.com/chapter/10.1007/978-981-96-3287-9_31'
+    },
+  {
+    title: 'Automated MCQ Generation for Video Lectures',
+    topic: 'NLP/EdTech',
+    description:
+      'Pipeline with Pytube + Whisper + spaCy to transcribe and generate MCQs with distractors; ~81% answer‑key accuracy in evaluations.',
+    link: 'https://github.com/deokarniharika/MCQ-generator'
+    },
+  
+  {
     title: 'Early Detection of Epileptic Seizures (Bioinformatics)',
     topic: 'Health/ML',
     description:
       'EEG‑based seizure prediction on 11.5k samples/178 features; best test AUC 0.767; SVM recall 82.4%; Twilio SMS alerts and secure Streamlit UI.',
-  },
-  {
-    title: 'Occlusion‑Aware Face Recognition',
-    topic: 'CV/Deep Learning',
-    description:
-      'Reconstruction of occluded faces using GANs + Siamese TL; improved matching under occlusions using campus image dataset.',
   },
   {
     title: 'Prediction and Analysis of Carbon Footprint of Food',
@@ -62,17 +59,25 @@ const projects: Project[] = [
       'Visual analytics of GHG emissions per kg; ensemble models reached 88.2% test accuracy; advocates plant‑based dietary shifts.',
   },
   {
-    title: "There Is No Earth B — Website Revamp",
+    title: "Website Revamp: There Is No Earth B",
     topic: 'Climate Tech/Web',
     description:
       'Led redesign for clearer content (events, guides, videos, petitions); improved UX to support awareness and community action.',
-  },
+    },
   {
     title: 'InTheEco Bot',
     topic: 'Automation',
     description:
       'Bot that surfaces Reddit environmental news to keep communities updated on key sustainability topics.',
+    link: 'https://github.com/deokarniharika/InTheEco'
   },
+  {
+    title: 'Occlusion‑Aware Face Recognition',
+    topic: 'CV/Deep Learning',
+    description:
+      'Reconstruction of occluded faces using GANs + Siamese TL; improved matching under occlusions using campus image dataset.',
+    link: 'https://github.com/deokarniharika/Occluded-Face-Recognition-System'
+    },
 ]
 
 export default function Projects() {

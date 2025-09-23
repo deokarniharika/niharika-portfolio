@@ -189,7 +189,7 @@ export default function Experience() {
         {/* Call to Action */}
         <div className="text-center mt-12">
           <p className="text-gray-600 dark:text-gray-300 mb-4">
-            Interested in collaborating on data science projects or need AI/ML solutions for your organization?
+            Interested in collaborating on data science projects or need AI/ML solutions for your organisation?
           </p>
           <a 
             href="#contact" 

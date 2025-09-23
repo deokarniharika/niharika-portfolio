@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
@@ -30,14 +31,40 @@ export default function EpilepsyDetectionProject() {
 
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-            <div className="p-8 text-center text-gray-500 dark:text-gray-400">
-              Add project images here
-            </div>
+            <Image src={require('../../../proj-images/epi1.png')} alt="Epilepsy Detection 1" className="w-full h-auto object-contain" />
           </div>
           <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-            <div className="p-8 text-center text-gray-500 dark:text-gray-400">
-              Add project images here
-            </div>
+            <Image src={require('../../../proj-images/epi2.png')} alt="Epilepsy Detection 2" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/epi3.png')} alt="Epilepsy Detection 3" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/epi4.png')} alt="Epilepsy Detection 4" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/epi5.png')} alt="Epilepsy Detection 5" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/epi6.png')} alt="Epilepsy Detection 6" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/epi7.png')} alt="Epilepsy Detection 7" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/epi8.png')} alt="Epilepsy Detection 8" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/epi9.png')} alt="Epilepsy Detection 9" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/epi10.png')} alt="Epilepsy Detection 10" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/epi11.png')} alt="Epilepsy Detection 11" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/epi12.png')} alt="Epilepsy Detection 12" className="w-full h-auto object-contain" />
           </div>
         </div>
       </div>

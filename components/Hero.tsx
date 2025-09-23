@@ -23,14 +23,14 @@ export default function Hero() {
           Niharika Deokar
         </h1>
         
-        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-          Building ML Models that Matter | University of Bristol | Outstanding PLUS Awardee- Partnerships Builder | Over 2 years of hands-on experience in driving impactful decisions from data.
+        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-5xl mx-auto">
+          Building ML Models that Matter | MSc Data Science | University of Bristol | Outstanding PLUS Awardee- Partnerships Builder | Over 2 years of hands-on experience in driving impactful decisions from data.
         </p>
 
                        {/* Sustainability Tag */}
             <div className="inline-flex mb-8">
            <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm font-medium rounded-full">
-             🌱 Passionate about Sustainability
+             With experience in Climate Data Analysis
            </span>
          </div>
  
@@ -39,7 +39,7 @@ export default function Hero() {
             href="https://www.linkedin.com/in/deokarniharika/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-gray-600 hover:text-green-600 transition-colors"
+            className="flex items-center gap-2 text-gray-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <Linkedin size={20} />
             <span>LinkedIn Profile</span>
@@ -48,7 +48,7 @@ export default function Hero() {
             href="https://github.com/deokarniharika" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-gray-600 hover:text-gray-900 dark:hover:text-white transition-colors"
+            className="flex items-center gap-2 text-gray-600 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <Github size={20} />
             <span>GitHub Profile</span>
