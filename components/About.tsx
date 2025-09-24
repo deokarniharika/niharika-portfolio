@@ -17,7 +17,7 @@ export default function About() {
               Professional Summary
             </h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Motivated Data Science master's student with a strong foundation in machine learning, 
+              Motivated Data Science professional with a strong foundation in machine learning, 
               data analysis, and programming. Experienced in working on diverse projects and internships 
               across technology, sustainability, and finance.
             </p>
