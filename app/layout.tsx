@@ -17,7 +17,7 @@ export const metadata = {
   creator: 'Niharika Deokar',
   openGraph: {
     title: 'Niharika Deokar | Data Science Portfolio',
-    description: 'Data Science professional specializing in Machine Learning, Statistical Analysis, and Sustainable Technology.',
+    description: 'Data Science professional specialising in building impactful ML models, Data and Statistical Analysis, and Sustainability.',
     type: 'website',
     locale: 'en_US',
   },
