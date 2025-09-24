@@ -60,7 +60,7 @@ export default function Hero() {
         <div className="flex items-center justify-center gap-4 text-gray-500 dark:text-gray-400 mb-6">
           <div className="flex items-center gap-2">
             <MapPin size={16} />
-            <span>Bristol, United Kingdom</span>
+            <span>United Kingdom</span>
           </div>
           <div className="flex items-center gap-2">
             <Mail size={16} />
