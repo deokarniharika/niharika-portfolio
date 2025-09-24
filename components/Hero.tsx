@@ -24,8 +24,10 @@ export default function Hero() {
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-5xl mx-auto">
-          Building ML Models that Matter | MSc Data Science | University of Bristol | Outstanding PLUS Awardee- Partnerships Builder | Over 2 years of hands-on experience in driving impactful decisions from data.
-        </p>
+  Building ML Models that Matter | MSc Data Science: University of Bristol<br />
+  Outstanding PLUS Awardee - Partnerships Builder | Springer Author<br />
+  Over 2 years of hands-on experience in driving impactful decisions from data.
+</p>
 
                        {/* Sustainability Tag */}
             <div className="inline-flex mb-8">
