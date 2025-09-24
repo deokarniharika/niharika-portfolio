@@ -10,7 +10,7 @@ export default function Contact() {
           {/* Contact Information */}
           <div>
             <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Open to opportunities in data science, machine learning research, and sustainable technology. 
+              Open to opportunities in data science, machine learning, and sustainable technology. 
               Let's discuss how we can work together.
             </p>
             

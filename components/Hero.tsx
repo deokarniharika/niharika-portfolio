@@ -30,7 +30,7 @@ export default function Hero() {
                        {/* Sustainability Tag */}
             <div className="inline-flex mb-8">
            <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm font-medium rounded-full">
-             With experience in Climate Data Analysis
+           Also: Experience in Climate & Sustainability
            </span>
          </div>
  

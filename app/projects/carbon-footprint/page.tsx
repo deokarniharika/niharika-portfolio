@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
@@ -30,15 +31,10 @@ export default function CarbonFootprintProject() {
 
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-            <div className="p-8 text-center text-gray-500 dark:text-gray-400">
-              Add project images here
-            </div>
+            <Image src={require('../../../proj-images/enviro1.png')} alt="Environmental Impact 1" className="w-full h-auto object-contain" />
           </div>
-          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-            <div className="p-8 text-center text-gray-500 dark:text-gray-400">
-              Add project images here
-            </div>
-          </div>
+          
+      
         </div>
       </div>
     </main>

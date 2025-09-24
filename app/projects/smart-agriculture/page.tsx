@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
@@ -30,16 +31,44 @@ export default function SmartAgricultureProject() {
 
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-            <div className="p-8 text-center text-gray-500 dark:text-gray-400">
-              Add project images here
-            </div>
+            <Image src={require('../../../proj-images/spr1.png')} alt="Soil Temperature Analysis 1" className="w-full h-auto object-contain" />
           </div>
           <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-            <div className="p-8 text-center text-gray-500 dark:text-gray-400">
-              Add project images here
-            </div>
+            <Image src={require('../../../proj-images/spr2.png')} alt="Soil Temperature Analysis 2" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/spr3.png')} alt="Soil Temperature Analysis 3" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/spr4.png')} alt="Soil Temperature Analysis 4" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/spr5.png')} alt="Soil Temperature Analysis 5" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/spr6.png')} alt="Soil Temperature Analysis 6" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/spr7.png')} alt="Soil Temperature Analysis 7" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/spr8.png')} alt="Soil Temperature Analysis 8" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/spr9.png')} alt="Soil Temperature Analysis 9" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/spr10.png')} alt="Soil Temperature Analysis 10" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/spr11.png')} alt="Soil Temperature Analysis 11" className="w-full h-auto object-contain" />
+          </div>
+          <div className="rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+            <Image src={require('../../../proj-images/spr12.png')} alt="Soil Temperature Analysis 12" className="w-full h-auto object-contain" />
           </div>
         </div>
+          
+       
       </div>
     </main>
   )
