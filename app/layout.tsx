@@ -11,7 +11,7 @@ const inter = Inter({
 
 export const metadata = {
   title: 'Niharika Deokar | Data Science Portfolio',
-  description: 'Data Science professional specializing in Machine Learning, Statistical Analysis, and Sustainable Technology. MSc Data Science student at University of Bristol.',
+  description: 'Data Science professional specialising in building impactful ML models, Data and Statistical Analysis, and Sustainability. MSc Data Science student at University of Bristol.',
   keywords: ['Data Science', 'Machine Learning', 'Statistical Analysis', 'Python', 'Sustainability', 'University of Bristol'],
   authors: [{ name: 'Niharika Deokar' }],
   creator: 'Niharika Deokar',
